@@ -1,6 +1,6 @@
 /* @bruin
 
-name: public.changing_name4
+name: public.changing_name6
 type: pg.sql
 connection: neon
 materialization:
