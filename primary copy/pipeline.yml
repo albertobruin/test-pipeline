@@ -1,4 +1,4 @@
-id: main-test
+id: another-test
 # schedule: "daily"
 schedule: "*/2 * * * *"
 # start_date: "2023-06-10"
