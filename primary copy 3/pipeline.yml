@@ -1,0 +1,12 @@
+id: ultimate
+# schedule: "daily"
+schedule: "*/2 * * * *"
+# start_date: "2023-06-10"
+
+default_connections:
+  gcp: "gcp-default"
+  postgres: "neon"
+  redshift: "neon-redshift"
+  mssql: "mssql-default"
+  synapse: "synapse"
+
