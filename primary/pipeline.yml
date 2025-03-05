@@ -1,6 +1,6 @@
 id: main-test
 # schedule: "daily"
-schedule: "*/2 * * * *"
+schedule: "*/20 * * * *"
 # start_date: "2023-06-10"
 
 default_connections:
