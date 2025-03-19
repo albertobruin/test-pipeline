@@ -23,4 +23,4 @@ custom_checks:
 
 @bruin */
 
-select 1 as byeworld
+select 1 as helloworld
