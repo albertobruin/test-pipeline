@@ -7,9 +7,9 @@ materialization:
     type: table
 
 columns:
-  - name: helloworld
+  - name: one
     type: INTEGER
-    description: helloworld as a test column for the asset
+    description: one as a test column for the asset
     checks:
       - name: not_null
       - name: accepted_values
@@ -19,7 +19,7 @@ columns:
 custom_checks:
   - name: another custom check
     value: 1
-    query: select count(*) from public.someother_asset
+    query: select count(*) from test_data_set_us.bigquery
 
 @bruin */
 
