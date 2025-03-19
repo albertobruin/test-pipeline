@@ -23,4 +23,4 @@ custom_checks:
 
 @bruin */
 
-"select 1 as one, 2 as two
+select 1 as one, 2 as two
