@@ -1,6 +1,6 @@
 /* @bruin
 
-name: public.changing_name
+name: public.changing_name2
 type: pg.sql
 connection: neon
 materialization:
@@ -19,7 +19,7 @@ columns:
 custom_checks:
   - name: another custom check
     value: 1
-    query: select count(*) from public.someother_asset
+    query: select count(*) from public.changing_name2
 
 @bruin */
 

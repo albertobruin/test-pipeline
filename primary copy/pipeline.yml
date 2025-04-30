@@ -1,8 +1,0 @@
-id: another-test
-# schedule: "daily"
-schedule: "0 * * * *"
-# start_date: "2023-06-10"
-
-default_connections:
-  postgres: "neon"
-
