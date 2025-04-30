@@ -1,8 +1,8 @@
 /* @bruin
 
 name: test_data_set_us.bigquery
-type: bq.sql
-connection: gcp-default
+type: pg.sql
+connection: neon
 materialization:
     type: table
 
