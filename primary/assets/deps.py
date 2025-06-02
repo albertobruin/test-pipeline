@@ -2,7 +2,7 @@
 
 name: python.test  
 secrets:
-    - key: bruin-health-check-bq
+    - key: neon
       inject_as: test_conn
 
 @bruin """
