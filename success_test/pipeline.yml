@@ -6,3 +6,6 @@ schedule: "hourly"
 default_connections:
   postgres: "neon"
 
+notifications:
+  slack:
+    - channel: "fitness"
