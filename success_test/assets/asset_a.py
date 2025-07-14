@@ -9,7 +9,7 @@ import time
 
 
 print('brb, taking a quick nap')
-time.sleep(3)
+# time.sleep(1)
 import random
 
 if random.random() < 10.5:
