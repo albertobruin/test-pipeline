@@ -12,10 +12,10 @@ print('brb, taking a quick nap')
 time.sleep(60)
 import random
 
-# if random.random() < 0.5:
-#     raise Exception("Heads! You lose!")
-# else:
-#     print("Tails! You win!")
+if 0 < 0.5:
+    raise Exception("Heads! You lose!")
+else:
+    print("Tails! You win!")
 
 
 
