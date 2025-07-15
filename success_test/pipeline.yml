@@ -1,5 +1,5 @@
 id: success-test
-schedule: "hourly"
+schedule: "daily"
 # schedule: "0 * * * *"
 # start_date: "2023-06-10"
 
