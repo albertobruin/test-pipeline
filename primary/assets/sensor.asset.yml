@@ -1,0 +1,4 @@
+name: some-sensor
+type: bq.sensor.table
+parameters:
+    table: "alberto_test"
