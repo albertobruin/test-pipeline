@@ -9,7 +9,7 @@ materialization:
 columns:
   - name: helloworld
     type: INTEGER
-    description: helloworld as a test column for the asset
+    description: helloworld as a test column for the asset, force update
     checks:
       - name: not_null
       - name: accepted_values
