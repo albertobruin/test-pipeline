@@ -1,4 +1,5 @@
 name: some-sensor
 type: bq.sensor.table
+connection: default-gcp
 parameters:
-    table: "alberto_test"
+    table: "bruin-alberto-playground.test_data_set_us.test_table"
