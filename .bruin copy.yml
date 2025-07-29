@@ -1,0 +1,12 @@
+default_environment: default
+environments:
+    default:
+        connections:
+            postgres:
+                - name: neon
+                  username: alberto.gomez
+                  password: TE4qcRIyDO8g
+                  host: ep-morning-lab-a2dsgwdh.eu-central-1.aws.neon.tech
+                  port: 5432
+                  database: neondb
+                  schema: publicm

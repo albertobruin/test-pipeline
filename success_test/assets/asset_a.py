@@ -1,6 +1,9 @@
 """ @bruin
 
 name: asset_a
+secrets:
+    - key: aws
+      inject_as: test_conn
 
 @bruin """
 
@@ -9,6 +12,7 @@ import time
 
 
 print('brb, taking a quick nap')
+print(os.environ['test_conn'])
 # time.sleep(1)
 import random
 
