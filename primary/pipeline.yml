@@ -4,9 +4,9 @@ schedule: "hourly"
 # start_date: "2023-06-10"
 agent: true
 
-# metadata_push:
-#   bigquery: true
-
+metadata_push:
+  bigquery: true
+  
 default_connections:
   postgres: "neon"
 
