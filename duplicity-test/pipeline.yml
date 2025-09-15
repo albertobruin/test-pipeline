@@ -1,13 +1,9 @@
-id: test-agent
+id: duplicity-test
 schedule: "hourly"
 # schedule: "0 * * * *"
 # start_date: "2023-06-10"
 agent: true
 
-# metadata_push:
-#   bigquery: true
-
 default_connections:
   postgres: "neon"
-
 
