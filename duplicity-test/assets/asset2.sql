@@ -6,8 +6,6 @@ connection: neon
 materialization:
     type: table
 
-depends:
-    - non_existent
 
 columns:
   - name: helloworld
