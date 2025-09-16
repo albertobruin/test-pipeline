@@ -1,9 +1,8 @@
 /* @bruin
 
-name: test_data_set_us.some_new_table
-type: bq.sql
-description: This is a test asset to check the bigquery integration
-connection: gcp-default
+name: public.something
+type: pg.sql
+connection: neon
 materialization:
     type: table
 
@@ -20,7 +19,7 @@ columns:
 custom_checks:
   - name: another custom check
     value: 1
-    query: select count(*) from test_data_set_us.some_new_table
+    query: select count(*) from public.something
 
 @bruin */
 
