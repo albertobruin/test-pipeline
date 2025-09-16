@@ -2,7 +2,7 @@ id: test-agent
 schedule: "hourly"
 # schedule: "0 * * * *"
 # start_date: "2023-06-10"
-agent: true
+agent: false
 
 metadata_push:
   bigquery: true
