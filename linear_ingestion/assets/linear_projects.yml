@@ -1,0 +1,46 @@
+name: linear.projects
+type: ingestr
+description: Ingest projects from Linear workspace
+
+parameters:
+  source_connection: linear_connection
+  source_table: 'projects'
+  destination: gcp-default
+
+columns:
+  - name: id
+    type: STRING
+    description: Unique identifier for the project
+    primary_key: true
+  - name: name
+    type: STRING
+    description: Name of the project
+  - name: description
+    type: STRING
+    description: Project description
+  - name: state
+    type: STRING
+    description: Current state of the project
+  - name: progress
+    type: FLOAT
+    description: Project progress percentage
+  - name: startedAt
+    type: TIMESTAMP
+    description: When the project was started
+  - name: targetDate
+    type: TIMESTAMP
+    description: Target completion date
+  - name: createdAt
+    type: TIMESTAMP
+    description: When the project was created
+  - name: updatedAt
+    type: TIMESTAMP
+    description: When the project was last updated
+  - name: leadId
+    type: STRING
+    description: ID of the project lead
+
+tags:
+  - linear
+  - projects
+  - source
