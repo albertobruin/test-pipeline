@@ -1,0 +1,21 @@
+name: linear.projects
+type: ingestr
+description: Ingest projects from Linear workspace
+
+parameters:
+  source_connection: linear_connection
+  source_table: 'projects'
+  destination: bigquery
+  incremental_strategy: merge
+  incremental_key: updatedAt
+
+columns:
+  - name: id
+    type: STRING
+    description: Unique identifier for the project
+    primary_key: true
+
+tags:
+  - linear
+  - projects
+  - source

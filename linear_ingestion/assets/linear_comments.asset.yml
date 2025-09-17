@@ -1,0 +1,21 @@
+name: linear.comments
+type: ingestr
+description: Ingest comments from Linear workspace
+
+parameters:
+  source_connection: linear_connection
+  source_table: 'comments'
+  destination: bigquery
+  incremental_strategy: merge
+  incremental_key: updatedAt
+
+columns:
+  - name: id
+    type: STRING
+    description: Unique identifier for the comment
+    primary_key: true
+
+tags:
+  - linear
+  - comments
+  - source

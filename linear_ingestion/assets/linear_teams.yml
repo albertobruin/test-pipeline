@@ -1,0 +1,37 @@
+name: linear.teams
+type: ingestr
+description: Ingest teams from Linear workspace
+
+parameters:
+  source_connection: linear_connection
+  source_table: 'teams'
+  destination: gcp-default
+
+columns:
+  - name: id
+    type: STRING
+    description: Unique identifier for the team
+    primary_key: true
+  - name: name
+    type: STRING
+    description: Name of the team
+  - name: key
+    type: STRING
+    description: Team key/identifier
+  - name: description
+    type: STRING
+    description: Team description
+  - name: private
+    type: BOOLEAN
+    description: Whether the team is private
+  - name: createdAt
+    type: TIMESTAMP
+    description: When the team was created
+  - name: updatedAt
+    type: TIMESTAMP
+    description: When the team was last updated
+
+tags:
+  - linear
+  - teams
+  - source

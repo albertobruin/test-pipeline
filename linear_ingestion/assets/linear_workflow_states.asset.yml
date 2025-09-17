@@ -1,0 +1,21 @@
+name: linear.workflow_states
+type: ingestr
+description: Ingest workflow states from Linear workspace
+
+parameters:
+  source_connection: linear_connection
+  source_table: 'workflow_states'
+  destination: bigquery
+  incremental_strategy: merge
+  incremental_key: updatedAt
+
+columns:
+  - name: id
+    type: STRING
+    description: Unique identifier for the workflow state
+    primary_key: true
+
+tags:
+  - linear
+  - workflow
+  - source
