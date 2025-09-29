@@ -4,6 +4,8 @@ name: python.test
 secrets:
     - key: neon
       inject_as: test_conn
+    - key: NON_EXISTENT_KEY
+      inject_as: non_existent_conn
 
 @bruin """
 
