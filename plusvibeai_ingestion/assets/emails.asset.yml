@@ -1,0 +1,38 @@
+name: plusvibeai.emails
+type: ingestr
+description: Email data including message content, headers, thread information, and recipient details
+
+parameters:
+  source_connection: plusvibeai_connection
+  source_table: emails
+  destination: bigquery
+  incremental_strategy: merge
+  incremental_key: timestamp_created
+
+columns:
+  - name: id
+    type: STRING
+    description: Unique identifier for the email
+    primary_key: true
+  - name: subject
+    type: STRING
+    description: Email subject line
+  - name: from_email
+    type: STRING
+    description: Sender email address
+  - name: to_email
+    type: STRING
+    description: Recipient email address
+  - name: timestamp_created
+    type: TIMESTAMP
+    description: Email creation timestamp
+  - name: timestamp_sent
+    type: TIMESTAMP
+    description: Email sent timestamp
+
+tags:
+  - plusvibeai
+  - emails
+  - messages
+
+owner: data-team
