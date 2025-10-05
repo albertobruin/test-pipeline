@@ -1,0 +1,16 @@
+name: plusvibeai.leads
+type: ingestr
+description: Lead information including contact details, campaign association, engagement metrics, and professional information
+
+parameters:
+  source_connection: plusvibeai_connection
+  source_table: leads
+  destination: bigquery
+
+tags:
+  - plusvibeai
+  - leads
+  - contacts
+  - crm
+
+owner: data-team

@@ -1,0 +1,38 @@
+name: plusvibeai.tags
+type: ingestr
+description: Tag information used for organizing and categorizing campaigns, leads, and other resources
+
+parameters:
+  source_connection: plusvibeai_connection
+  source_table: tags
+  destination: bigquery
+  incremental_strategy: merge
+  incremental_key: modified_at
+
+columns:
+  - name: id
+    type: STRING
+    description: Unique identifier for the tag
+    primary_key: true
+  - name: name
+    type: STRING
+    description: Tag name
+  - name: color
+    type: STRING
+    description: Tag color for UI display
+  - name: description
+    type: STRING
+    description: Tag description
+  - name: modified_at
+    type: TIMESTAMP
+    description: Last modification timestamp
+  - name: created_at
+    type: TIMESTAMP
+    description: Tag creation timestamp
+
+tags:
+  - plusvibeai
+  - tags
+  - organization
+
+owner: data-team
