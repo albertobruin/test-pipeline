@@ -1,6 +1,0 @@
-# BigQuery sensor that checks if the Linear issues table is available
-name: linear.issues_table_sensor
-type: bq.sensor.table
-parameters:
-    table: "bruin-playground-mustafa-ersan.linear.issues"
-    poke_interval: 30
