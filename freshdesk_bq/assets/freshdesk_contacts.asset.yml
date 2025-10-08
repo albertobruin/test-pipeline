@@ -1,0 +1,11 @@
+name: public.freshdesk_contacts
+type: ingestr
+
+
+parameters:
+  source_connection: freshdesk-default
+  source_table: 'contacts'
+
+  destination: bigquery
+
+
