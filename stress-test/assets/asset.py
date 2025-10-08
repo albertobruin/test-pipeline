@@ -6,7 +6,7 @@ secrets:
       inject_as: test_conn
 
 @bruin """
-from streamer import streamer
+from streamer import main
 
 if __name__ == "__main__":
-    streamer.main()
+    main()
