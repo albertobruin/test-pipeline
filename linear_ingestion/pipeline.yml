@@ -1,7 +1,7 @@
 id: linear_ingestion
 description: Linear data ingestion pipeline to BigQuery
 schedule: daily
-start_date: "2025-10-01"
+start_date: "2025-08-08"
 
 default_connections:
   google_cloud_platform: gcp-default
