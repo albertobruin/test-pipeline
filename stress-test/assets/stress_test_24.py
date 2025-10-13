@@ -1,6 +1,6 @@
 """ @bruin
 
-name: stress.test_n
+name: stress.test_24
 secrets:
     - key: neon
       inject_as: test_conn
