@@ -55,7 +55,7 @@ EOF
 )
 
   # Send curl request
-  curl -s \
+  curl -s -o /dev/null -w "Response: %{http_code}\n" \
     -H "Authorization: Bearer ${AUTH}" \
     -H "Content-Type: application/json" \
     -X POST \
@@ -63,5 +63,5 @@ EOF
     "${URL}"
 
   # Wait 1/50 second
-  sleep 0.02
+  sleep 0.01
 done
