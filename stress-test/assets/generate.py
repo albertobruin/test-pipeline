@@ -1,6 +1,6 @@
 # generate_stress_tests.py
 
-N = 100  # change this to however many files you want
+N = 1000  # change this to however many files you want
 
 template = """\"\"\" @bruin
 
