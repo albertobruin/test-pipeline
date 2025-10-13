@@ -24,7 +24,7 @@ for ((i=1; i<=N; i++)); do
   "relative_path": "stress-test/assets/stress_test_10.py",
   "parameters": {
     "synthetic": "true",
-    "commit": "3de645c3d387dea72165e4a047af0539e2659b59",
+    "commit": "a62aed450194f49c3f2a4d9fa43dea99c541a83a",
     "repo_url": "git@github.com:albertobruin/test-pipeline.git",
     "resources": {
       "limits": {"cpu": "250m", "memory": "512Mi"},
