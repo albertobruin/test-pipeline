@@ -5,7 +5,7 @@ import string
 
 # --- Hard-coded settings ---
 MIN_S = 1.0       # minimum total duration (seconds)
-MAX_S = 10.0      # maximum total duration (seconds)
+MAX_S = 100.0      # maximum total duration (seconds)
 INTERVAL = 0.2    # print interval (seconds)
 SEED = None       # set to an int for reproducibility
 # ---------------------------
