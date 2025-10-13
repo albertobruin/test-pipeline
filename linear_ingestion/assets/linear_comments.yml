@@ -1,6 +1,7 @@
 name: linear.comments
 type: ingestr
 description: Ingest comments from Linear workspace
+start_date: "2025-01-01"
 
 parameters:
   source_connection: linear_connection
