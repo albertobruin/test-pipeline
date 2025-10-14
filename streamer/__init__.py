@@ -31,7 +31,8 @@ def main():
 
     mu = (MIN_S + MAX_S) / 2.0
     sigma = (MAX_S - MIN_S) / 6.0
-    duration = _truncated_normal(MIN_S, MAX_S, mu, sigma)
+    # duration = _truncated_normal(MIN_S, MAX_S, mu, sigma)
+    duration = 20
 
     start = time.monotonic()
     next_tick = start

@@ -21,7 +21,7 @@ for ((i=1; i<=N; i++)); do
   "client_id": "albertotest",
   "project_id": "albertotest",
   "pipeline_id": "albertotest-stress-test",
-  "relative_path": "stress-test/assets/stress_test_10.py",
+  "relative_path": "stress-test/assets/stress_test_1.py",
   "parameters": {
     "synthetic": "true",
     "commit": "a62aed450194f49c3f2a4d9fa43dea99c541a83a",
@@ -34,7 +34,7 @@ for ((i=1; i<=N; i++)); do
     "vault_path": "clients/albertotest/connections",
     "vault_role": "airflow-python-task-albertotest",
     "annotations": {
-      "getbruin.com/asset": "stress.test_10",
+      "getbruin.com/asset": "stress.test_1",
       "getbruin.com/client": "albertotest",
       "getbruin.com/dag_id": "albertotest-stress-test",
       "getbruin.com/project": "main",

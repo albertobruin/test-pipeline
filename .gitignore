@@ -2,3 +2,4 @@
 logs/runs
 logs/*.log
 duckdb.db
+*__pycache__*
