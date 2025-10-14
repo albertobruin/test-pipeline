@@ -22,7 +22,7 @@ if __name__ == "__main__":
     )
     print("Connected to Postgres:", conn_info["host"])
     cur = conn.cursor()
-    cur.execute("UPDATE public.counter SET counter = 1 ")
+    cur.execute("UPDATE public.counter SET counter = counter + 1 ")
     conn.commit()
 
     cur.close()
