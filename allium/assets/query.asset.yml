@@ -1,0 +1,6 @@
+name : allium.query
+type : ingestr
+parameters:
+  source_connection: my-allium
+  source_table: query:TpwESVM5VQShaFwuI5Gr:limit=10
+  destination: bigquery
