@@ -2,6 +2,6 @@ name: couchbase.my_data
 type: ingestr
 
 parameters:
-  source_table: inventory.airline
+  source_table: travel-sample.inventory.airline
   source_connection: couchbase_capella
   destination: bigquery
