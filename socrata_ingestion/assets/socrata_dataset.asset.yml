@@ -1,0 +1,9 @@
+name: main.socrata_data
+type: ingestr
+
+parameters:
+  source_connection: socrata_conn
+  source_table: "6udu-fhnu"
+  
+  destination: bigquery
+
