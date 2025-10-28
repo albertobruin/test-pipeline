@@ -3,7 +3,7 @@
 name: test_data_set_us.test_table
 type: bq.source
 description: This is a test asset to check the bigquery integration
-connection: gcp-default
+connection: alberto-test-playground
 
 
 
