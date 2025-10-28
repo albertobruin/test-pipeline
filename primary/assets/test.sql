@@ -11,7 +11,7 @@ custom_checks:
   - name: "whatever"
     value: 0
     query: |-
-      SELECT DATE_DIFF(MAX(the_date), MIN(the_date), DAY) + 1 -  COUNT(DISTINCT the_date)  FROM `bruin-alberto-playground.test_data_set_us.some_table` 
+      SELECT DATE_DIFF(MAX(the_date), MIN(the_date), DAY) + 1 -  COUNT(DISTINCT the_date)  FROM `bruin-alberto-playground.test_data_set_us.test_table` 
 
 
 @bruin */
