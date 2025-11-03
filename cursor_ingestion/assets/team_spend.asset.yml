@@ -1,0 +1,15 @@
+name: cursor.team_spend
+type: ingestr
+description: Team spending data for the current billing cycle
+
+parameters:
+  source_connection: cursor_connection
+  source_table: 'team_spend'
+  destination: bigquery
+
+tags:
+  - cursor
+  - spend
+  - billing
+  - ingestion
+

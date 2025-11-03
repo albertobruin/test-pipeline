@@ -1,0 +1,16 @@
+name: cursor.team_members
+type: ingestr
+description: Team member information including names, emails, and roles
+
+
+parameters:
+  source_connection: cursor_connection
+  source_table: 'team_members'
+  destination: bigquery
+
+tags:
+  - cursor
+  - team
+  - members
+  - ingestion
+

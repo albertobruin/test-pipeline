@@ -1,0 +1,16 @@
+name: cursor.filtered_usage_events
+type: ingestr
+description: Detailed usage events with timestamps, models, token usage, and costs. Supports optional date filtering
+
+parameters:
+  source_connection: cursor_connection
+  source_table: 'filtered_usage_events'
+  destination: bigquery
+
+tags:
+  - cursor
+  - usage
+  - events
+  - detailed
+  - ingestion
+
