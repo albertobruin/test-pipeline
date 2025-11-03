@@ -1,0 +1,17 @@
+name: cursor.daily_usage_data
+type: ingestr
+description: Daily usage statistics including lines added/deleted, AI requests, model usage. Supports optional date filtering
+connection: duckdb-default
+
+parameters:
+  source_connection: cursor_connection
+  source_table: 'daily_usage_data'
+  destination: duckdb
+
+tags:
+  - cursor
+  - usage
+  - daily
+  - statistics
+  - ingestion
+

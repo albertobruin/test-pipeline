@@ -1,0 +1,9 @@
+id: cursor_ingestion
+description: Cursor data ingestion pipeline to DuckDB
+schedule: daily
+start_date: "2024-01-01"
+
+default_connections:
+  duckdb: duckdb-default
+  cursor: cursor_connection
+
