@@ -1,12 +1,12 @@
 name: cursor.team_members
 type: ingestr
 description: Team member information including names, emails, and roles
-connection: duckdb-default
+
 
 parameters:
   source_connection: cursor_connection
   source_table: 'team_members'
-  destination: duckdb
+  destination: bigquery
 
 tags:
   - cursor

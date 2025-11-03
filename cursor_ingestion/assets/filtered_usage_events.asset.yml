@@ -1,12 +1,11 @@
 name: cursor.filtered_usage_events
 type: ingestr
 description: Detailed usage events with timestamps, models, token usage, and costs. Supports optional date filtering
-connection: duckdb-default
 
 parameters:
   source_connection: cursor_connection
   source_table: 'filtered_usage_events'
-  destination: duckdb
+  destination: bigquery
 
 tags:
   - cursor
