@@ -1,0 +1,15 @@
+name: snapchat.ads
+type: ingestr
+description: Snapchat Ads individual ads data with merge strategy for incremental updates
+
+parameters:
+  source_connection: my-snapchatads
+  source_table: 'ads'
+  destination: bigquery
+
+tags:
+  - snapchat
+  - ads
+  - ingestion
+
+

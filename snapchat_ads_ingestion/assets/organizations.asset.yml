@@ -1,0 +1,16 @@
+name: snapchat.organizations
+type: ingestr
+description: Snapchat Ads organizations data (does not require organization_id)
+
+parameters:
+  source_connection: my-snapchatads
+  source_table: 'organizations'
+  destination: bigquery
+
+tags:
+  - snapchat
+  - ads
+  - organizations
+  - ingestion
+
+
