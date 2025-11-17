@@ -10,4 +10,4 @@ secrets:
 
 import os, json
 vars = json.loads(os.environ["BRUIN_VARS"])
-print(vars["env"])
+print(vars)
