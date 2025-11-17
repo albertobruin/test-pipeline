@@ -3,3 +3,5 @@ logs/runs
 logs/*.log
 duckdb.db
 *__pycache__*
+chess
+sales
