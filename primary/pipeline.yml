@@ -10,4 +10,53 @@ metadata_push:
 default_connections:
   postgres: "neon"
 
+variables:
+  target_segment:
+    type: string
+    enum: ["self_serve", "enterprise", "partner"]
+    default: "enterprise"
+  forecast_horizon_days:
+    type: integer
+    minimum: 7
+    maximum: 90
+    default: 30
+  experiment_cohorts:
+    type: array
+    minItems: 1
+    items:
+      type: object
+      required: [name, weight, channels]
+      properties:
+        name:
+          type: string
+        weight:
+          type: number
+          minimum: 0
+          maximum: 1
+        channels:
+          type: array
+          items:
+            type: string
+      additionalProperties: false
+    default:
+      - name: enterprise_baseline
+        weight: 0.6
+        channels: ["email", "customer_success"]
+      - name: partner_campaign
+        weight: 0.4
+        channels: ["webinar", "email"]
+  channel_overrides:
+    type: object
+    properties:
+      email:
+        type: array
+        items:
+          type: string
+      sales_enablement:
+        type: array
+        items:
+          type: string
+    default:
+      email: ["enterprise_newsletter"]
+      sales_enablement: ["q1_forecast_brief", "expansion_playbook"]
 
