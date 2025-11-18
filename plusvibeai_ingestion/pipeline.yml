@@ -1,9 +1,0 @@
-id: plusvibeai_ingestion
-start_date: "2023-01-01"
-description: "Plus Vibe AI data ingestion pipeline for email marketing and outreach platform"
-
-
-default_connections:
-    google_cloud_platform: gcp-default
-    plusvibeai: plusvibeai_connection
-

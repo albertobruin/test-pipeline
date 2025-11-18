@@ -1,8 +1,0 @@
-name : mailchimp.audiences
-type : ingestr
-connection: gcp-default
-parameters:
-  source_connection: my-mailchimp
-  source_table: audiences
-  destination: bigquery
-

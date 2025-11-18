@@ -1,9 +1,0 @@
-name: licensemanager_raw.hubspot_license
-type: ingestr
-connection: bruin-health-check-bq
-
-parameters:
-  source_connection: license_manager
-  source_table: hubSpotLicense.hubSpotLicense
-  destination: bigquery 
- 

@@ -1,9 +1,0 @@
-id: freshdesk_duckdb
-description: Freshdesk ingestion to DuckDB
-
-
-default_connections:
-  google_cloud_platform: gcp-default
-  freshdesk: freshdesk-default
-
-
