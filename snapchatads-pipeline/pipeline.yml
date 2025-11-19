@@ -3,6 +3,6 @@ schedule: "daily"
 start_date: "2024-01-01"
 
 default_connections:
-  duckdb: "duckdb-default"
+  duckdb: "gcp-default"
   snapchatads: "my-snapchatads"
 
