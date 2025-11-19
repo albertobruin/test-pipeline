@@ -1,9 +1,9 @@
 name: snapchatads.campaigns
 type: ingestr
-connection: duckdb-default
+connection: gcp-default
 
 parameters:
   source_connection: my-snapchatads
   source_table: campaigns_stats:TOTAL:impressions,spend,swipes
-  destination: duckdb
+  destination: bigquery
 
