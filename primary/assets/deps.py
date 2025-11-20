@@ -25,7 +25,7 @@ else:
     print(f"Connection {conn_name} not found in environment variables")
 
 print('brb, taking a quick nap')
-time.sleep(10)
+time.sleep(300)
 # import random
 
 # if random.random() < 0.5:
