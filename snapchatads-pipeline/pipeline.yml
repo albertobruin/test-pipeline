@@ -1,8 +1,7 @@
 id: snapchatads-pipeline
 schedule: "daily"
-start_date: "2024-01-01"
 
 default_connections:
-  duckdb: "gcp-default"
+  google-cloud: "gcp-default"
   snapchatads: "my-snapchatads"
 
