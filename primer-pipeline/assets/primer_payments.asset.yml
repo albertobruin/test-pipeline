@@ -1,0 +1,8 @@
+name: primer.payments
+type: ingestr
+
+parameters:
+  source_connection: my-primer
+  source_table: 'payments'
+  destination: bigquery
+

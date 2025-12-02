@@ -1,0 +1,8 @@
+id: bruin-pipeline
+schedule: "daily"
+
+default_connections:
+  duckdb: "gcp-default"
+  bruin: "my-bruin"
+
+

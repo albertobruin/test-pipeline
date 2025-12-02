@@ -1,0 +1,9 @@
+name: bruin.pipelines
+type: ingestr
+
+parameters:
+  source_connection: my-bruin
+  source_table: 'pipelines'
+  destination: bigquery
+
+
