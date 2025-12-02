@@ -1,0 +1,7 @@
+id: primer-pipeline
+schedule: "daily"
+
+default_connections:
+  duckdb: "gcp-default"
+  primer: "my-primer"
+
