@@ -1,0 +1,6 @@
+id: bq-table-sensor-test
+schedule: "0 * * * *"
+
+default_connections:
+  google_cloud_platform: "gcp-default"
+
