@@ -1,0 +1,7 @@
+name: test_data_set_us.sample_table_sensor
+type: bq.sensor.query
+connection: mustafa-test-my-bigquery
+parameters:
+    query: select count(*) > 0 from `test_data_set_us.sample_table`
+    poke_interval: 60
+
