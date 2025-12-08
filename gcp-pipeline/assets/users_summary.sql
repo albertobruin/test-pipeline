@@ -54,7 +54,11 @@ custom_checks:
         THEN 1 
         ELSE 0 
       END
-
+      
+  - name: "Table should have at least 100 rows"
+    value: 1
+    query: |
+      SELECT CASE WHEN COUNT(*) >= 100 THEN 1 ELSE 0 END FROM test_data_set_us.users_summary
 @bruin */
 
 SELECT 
