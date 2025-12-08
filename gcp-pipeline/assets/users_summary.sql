@@ -2,7 +2,7 @@
 
 name: test_data_set_us.users_summary
 type: bq.sql
-description: Kullanıcı özet tablosu - custom ve quality check örnekleri ile
+description: User summary table - with custom and quality check examples
 connection: gcp-default
 
 materialization:
@@ -11,21 +11,21 @@ materialization:
 columns:
   - name: user_id
     type: STRING
-    description: Kullanıcı benzersiz kimliği
+    description: Unique user identifier
     checks:
       - name: not_null
       - name: unique
 
   - name: total_orders
     type: INTEGER
-    description: Toplam sipariş sayısı
+    description: Total number of orders
     checks:
       - name: not_null
       - name: non_negative
 
   - name: status
     type: STRING
-    description: Kullanıcı durumu
+    description: User status
     checks:
       - name: not_null
       - name: accepted_values
@@ -35,17 +35,17 @@ columns:
           - "pending"
 
 custom_checks:
-  - name: "Tablo boş olmamalı"
+  - name: "Table should not be empty"
     value: 1
     query: |
       SELECT SIGN(COUNT(*)) FROM test_data_set_us.users_summary
 
-  - name: "Toplam sipariş negatif olmamalı"
+  - name: "Total orders should not be negative"
     value: 0
     query: |
       SELECT COUNT(*) FROM test_data_set_us.users_summary WHERE total_orders < 0
 
-  - name: "Aktif kullanıcı oranı %10'dan fazla olmalı"
+  - name: "Active user ratio should be greater than 10%"
     value: 1
     query: |
       SELECT CASE 
