@@ -2,7 +2,7 @@
 
 name: test_data_set_us.users_summary
 type: bq.sql
-description: User summary table - with custom and quality check examples
+description: User summary table - with custom and quality check examples testttttt
 connection: gcp-default
 
 materialization:
