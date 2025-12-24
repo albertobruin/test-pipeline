@@ -18,7 +18,6 @@ columns:
 
 depends:
   - public.changing_name2
-    mode: symbolic
 
 custom_checks:
   - name: another custom check
