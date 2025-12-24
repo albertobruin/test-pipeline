@@ -19,7 +19,7 @@ columns:
 
 custom_checks:
   - name: another custom check
-    value: 1
+    value: 2
     query: select count(*) from public.upstream
 
 @bruin */
