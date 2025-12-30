@@ -1,0 +1,9 @@
+name: main.facebook_insights
+type: ingestr
+connection: gcp-default
+
+parameters:
+  source_connection: my-facebookads
+  source_table: 'facebook_insights_with_account_ids:201651054044171'
+  destination: bigquery
+
