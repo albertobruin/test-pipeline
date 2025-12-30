@@ -1,0 +1,9 @@
+name: main.facebook_ad_creatives
+type: ingestr
+connection: gcp-default
+
+parameters:
+  source_connection: my-facebookads
+  source_table: 'ad_creatives:201651054044171,1337852710004456'
+  destination: duckdb
+
