@@ -19,11 +19,6 @@ print("  - BRUIN_START_TIMESTAMP: ", os.getenv('BRUIN_START_TIMESTAMP'))
 print("  - BRUIN_END_TIMESTAMP: ", os.getenv('BRUIN_END_TIMESTAMP'))
 print("  - BRUIN_RUN_ID: ", os.getenv('BRUIN_RUN_ID'))
 
-conn_name = "test_conn"
-if conn_name in os.environ:
-    print(f"Connection {conn_name} exists in environment variables")
-else:
-    print(f"Connection {conn_name} not found in environment variables")
 
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.INFO)
