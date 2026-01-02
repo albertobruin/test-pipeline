@@ -11,6 +11,7 @@ secrets:
 
 import os 
 import time
+import logging
 
 print("Bruin says hello!")
 print("Here are some global variables: ")
@@ -24,8 +25,14 @@ if conn_name in os.environ:
 else:
     print(f"Connection {conn_name} not found in environment variables")
 
-print('brb, taking a quick nap')
-time.sleep(300)
+logger = logging.getLogger(__name__)
+logger.setLevel(logging.INFO)
+
+print("Logging a test info message from deps.py")
+logger.info("This is an info log from deps.py")
+print("Logging a test error message from deps.py")
+logger.error("This is a warning log from deps.py")
+  
 # import random
 
 # if random.random() < 0.5:
