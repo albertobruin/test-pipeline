@@ -1,6 +1,6 @@
 name: main.indeed_campaign_jobs
 type: ingestr
-connection: duckdb-default
+connection: gcp-default
 
 parameters:
   source_connection: my-indeed
