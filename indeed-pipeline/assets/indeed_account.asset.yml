@@ -1,0 +1,9 @@
+name: main.indeed_account
+type: ingestr
+connection: duckdb-default
+
+parameters:
+  source_connection: my-indeed
+  source_table: 'account'
+  destination: bigquery
+

@@ -1,0 +1,9 @@
+name: main.indeed_campaign_details
+type: ingestr
+connection: duckdb-default
+
+parameters:
+  source_connection: my-indeed
+  source_table: 'campaign_details'
+  destination: bigquery
+
