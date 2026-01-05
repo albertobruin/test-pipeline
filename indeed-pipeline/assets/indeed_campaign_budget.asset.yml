@@ -1,0 +1,9 @@
+name: main.indeed_campaign_budget
+type: ingestr
+connection: gcp-default
+
+parameters:
+  source_connection: my-indeed
+  source_table: 'campaign_budget'
+  destination: bigquery
+
