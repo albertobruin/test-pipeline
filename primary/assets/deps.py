@@ -27,7 +27,7 @@ print("Logging a test error message from deps.py")
 logger.error("This is a warning log from deps.py")
   
 # import random
-
+time.sleep(300)
 # if random.random() < 0.5:
 #     raise Exception("Heads! You lose!")
 # else:
