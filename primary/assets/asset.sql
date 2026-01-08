@@ -23,4 +23,5 @@ custom_checks:
 
 @bruin */
 
-select 1 as helloworld
+-- select 1 as helloworld
+PG_SLEEP(300)
