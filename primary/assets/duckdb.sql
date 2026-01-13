@@ -2,7 +2,7 @@
 
 name: public.ducky
 type: duckdb.sql
-connection: neon
+connection: ducky
 materialization:
     type: table
 
