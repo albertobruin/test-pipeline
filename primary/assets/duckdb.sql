@@ -1,6 +1,6 @@
 /* @bruin
 
-name: public.ducky
+name: main.ducky
 type: duckdb.sql
 connection: ducky
 materialization:
