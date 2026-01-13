@@ -4,6 +4,8 @@ id: test-agent
 # start_date: "2023-06-10"
 agent: false
 
+connection: ducky
+
 metadata_push:
   bigquery: true
   
