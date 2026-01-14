@@ -2,7 +2,7 @@
 
 name: vars.test 
 secrets:
-    - key: neon
+    - key: NEON
       inject_as: test_conn
 
 @bruin """

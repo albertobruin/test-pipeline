@@ -2,7 +2,7 @@
 
 name: python.oom_test
 secrets:
-    - key: neon
+    - key: NEON
       inject_as: test_conn
 
 instance: b1.small
