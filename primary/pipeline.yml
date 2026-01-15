@@ -10,7 +10,7 @@ metadata_push:
   bigquery: true
   
 default_connections:
-  postgres: "NEON"
+  postgres: "neon"
 
 variables:
   target_segment:

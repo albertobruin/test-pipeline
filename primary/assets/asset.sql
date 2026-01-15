@@ -2,7 +2,7 @@
 
 name: public.changing_name2
 type: pg.sql
-connection: NEON
+connection: neon
 materialization:
     type: table
 

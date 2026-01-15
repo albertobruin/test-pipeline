@@ -2,7 +2,7 @@
 
 name: public.something
 type: pg.sql
-connection: NEON
+connection: neon
 materialization:
     type: table
 
