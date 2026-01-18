@@ -10,6 +10,7 @@ secrets:
 import os 
 import time
 import logging
+import random
 
 print("Bruin says hello!")
 print("Here are some global variables: ")
@@ -27,13 +28,11 @@ print("Logging a test error message from deps.py")
 logger.error("This is a warning log from deps.py")
   
 # import random
-time.sleep(10)
-# if random.random() < 0.5:
-#     raise Exception("Heads! You lose!")
-# else:
-#     print("Tails! You win!")
-
-
+# time.sleep(10)
+if random.random() < 0.5:
+    raise Exception("Heads! You lose!")
+else:
+    print("Tails! You win!")
 
 
 print("We are done here.")
