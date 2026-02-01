@@ -1,0 +1,5 @@
+name: customerio-pipeline
+schedule: daily
+
+default_connections:
+  google_cloud_platform: gcp-default

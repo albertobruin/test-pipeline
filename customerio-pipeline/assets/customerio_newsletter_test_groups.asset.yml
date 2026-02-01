@@ -1,0 +1,8 @@
+name: customerio.newsletter_test_groups
+type: ingestr
+connection: gcp-default
+
+parameters:
+  source_connection: my_customerio
+  source_table: 'newsletter_test_groups'
+  destination: bigquery

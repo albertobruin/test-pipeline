@@ -1,0 +1,8 @@
+name: customerio.campaign_actions
+type: ingestr
+connection: gcp-default
+
+parameters:
+  source_connection: my_customerio
+  source_table: 'campaign_actions'
+  destination: bigquery

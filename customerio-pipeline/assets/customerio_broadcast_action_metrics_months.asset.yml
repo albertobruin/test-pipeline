@@ -1,0 +1,8 @@
+name: customerio.broadcast_action_metrics_months
+type: ingestr
+connection: gcp-default
+
+parameters:
+  source_connection: my_customerio
+  source_table: 'broadcast_action_metrics:months'
+  destination: bigquery

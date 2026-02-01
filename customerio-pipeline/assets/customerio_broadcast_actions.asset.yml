@@ -1,0 +1,8 @@
+name: customerio.broadcast_actions
+type: ingestr
+connection: gcp-default
+
+parameters:
+  source_connection: my_customerio
+  source_table: 'broadcast_actions'
+  destination: bigquery

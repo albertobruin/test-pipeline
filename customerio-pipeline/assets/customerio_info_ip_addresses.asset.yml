@@ -1,0 +1,8 @@
+name: customerio.info_ip_addresses
+type: ingestr
+connection: gcp-default
+
+parameters:
+  source_connection: my_customerio
+  source_table: 'info_ip_addresses'
+  destination: bigquery

@@ -1,0 +1,8 @@
+name: customerio.messages
+type: ingestr
+connection: gcp-default
+
+parameters:
+  source_connection: my_customerio
+  source_table: 'messages'
+  destination: bigquery
