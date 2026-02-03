@@ -12,7 +12,7 @@ import time
 import logging
 import random
 
-print("Bruin says hello!")
+print("Bruin says hello!!!!")
 print("Here are some global variables: ")
 print("  - BRUIN_START_TIMESTAMP: ", os.getenv('BRUIN_START_TIMESTAMP'))
 print("  - BRUIN_END_TIMESTAMP: ", os.getenv('BRUIN_END_TIMESTAMP'))
