@@ -1,8 +1,7 @@
-id: primary-every-minute
-schedule: "* * * * *"
-agent: false
+id: primary-every-5
 
-catchup: true
+schedule: "*/5 * * * *"
+agent: false
 
 connection: ducky
 

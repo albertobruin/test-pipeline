@@ -1,8 +1,8 @@
-id: primary-every-minute
-schedule: "* * * * *"
+id: test-agent
+# schedule: "hourly"
+# schedule: "0 * * * *"
+# start_date: "2023-06-10"
 agent: false
-
-catchup: true
 
 connection: ducky
 
