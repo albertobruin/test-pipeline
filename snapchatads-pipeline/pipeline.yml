@@ -1,7 +1,0 @@
-id: snapchatads-pipeline
-schedule: "daily"
-
-default_connections:
-  google-cloud: "gcp-default"
-  snapchatads: "my-snapchatads"
-

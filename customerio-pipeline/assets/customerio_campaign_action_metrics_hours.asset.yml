@@ -1,8 +1,0 @@
-name: customerio.campaign_action_metrics_hours
-type: ingestr
-connection: gcp-default
-
-parameters:
-  source_connection: my_customerio
-  source_table: 'campaign_action_metrics:hours'
-  destination: bigquery

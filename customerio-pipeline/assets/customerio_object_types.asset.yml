@@ -1,8 +1,0 @@
-name: customerio.object_types
-type: ingestr
-connection: gcp-default
-
-parameters:
-  source_connection: my_customerio
-  source_table: 'object_types'
-  destination: bigquery

@@ -1,8 +1,0 @@
-name: customerio.customer_activities
-type: ingestr
-connection: gcp-default
-
-parameters:
-  source_connection: my_customerio
-  source_table: 'customer_activities'
-  destination: bigquery

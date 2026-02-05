@@ -1,8 +1,0 @@
-name: customerio.reporting_webhooks
-type: ingestr
-connection: gcp-default
-
-parameters:
-  source_connection: my_customerio
-  source_table: 'reporting_webhooks'
-  destination: bigquery

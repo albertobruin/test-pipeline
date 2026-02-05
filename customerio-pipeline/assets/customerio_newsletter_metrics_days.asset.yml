@@ -1,8 +1,0 @@
-name: customerio.newsletter_metrics_days
-type: ingestr
-connection: gcp-default
-
-parameters:
-  source_connection: my_customerio
-  source_table: 'newsletter_metrics:days'
-  destination: bigquery

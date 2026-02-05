@@ -1,8 +1,0 @@
-name: customerio.broadcast_messages
-type: ingestr
-connection: gcp-default
-
-parameters:
-  source_connection: my_customerio
-  source_table: 'broadcast_messages'
-  destination: bigquery

@@ -1,9 +1,0 @@
-name: bruin.assets
-type: ingestr
-
-parameters:
-  source_connection: my-bruin
-  source_table: 'assets'
-  destination: bigquery
-
-

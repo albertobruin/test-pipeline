@@ -1,8 +1,0 @@
-name: customerio.campaign_metrics_days
-type: ingestr
-connection: gcp-default
-
-parameters:
-  source_connection: my_customerio
-  source_table: 'campaign_metrics:days'
-  destination: bigquery
