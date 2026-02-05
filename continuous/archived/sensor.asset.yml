@@ -1,5 +1,0 @@
-name: some-sensor-name
-type: bq.sensor.table
-connection: default-gcp
-parameters:
-    table: "bruin-alberto-playground.test_data_set_us.test_table"
