@@ -1,6 +1,7 @@
 """ @bruin
 
 name: python.test  
+uri: external://some_external_asset
 secrets:
     - key: neon
       inject_as: test_conn

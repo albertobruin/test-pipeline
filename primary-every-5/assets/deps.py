@@ -5,6 +5,10 @@ secrets:
     - key: neon
       inject_as: test_conn
 
+depends:
+    - python.oom_test
+    - uri: external://some_external_asset
+
 @bruin """
 
 import os 
