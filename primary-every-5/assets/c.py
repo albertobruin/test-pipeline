@@ -1,6 +1,6 @@
 """ @bruin
 
-name: asset_ctttfsdfds
+name: asset_ctttfs
 secrets:
     - key: neon
       inject_as: test_conn
