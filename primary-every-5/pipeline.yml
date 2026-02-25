@@ -6,7 +6,7 @@ agent: false
 connection: ducky
 
 metadata_push:
-  bigquery: true
+  bigquery: false
   
 default_connections:
   postgres: "neon"
