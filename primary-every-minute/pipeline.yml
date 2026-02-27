@@ -3,6 +3,7 @@ schedule: "* * * * *"
 agent: false
 
 catchup: true
+catchup_mode: "active"
 
 connection: ducky
 

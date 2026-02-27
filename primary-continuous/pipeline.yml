@@ -5,8 +5,6 @@ connection: ducky
 
 metadata_push:
   bigquery: false
-
-catchup_mode: "active"
   
 default_connections:
   postgres: "neon"
