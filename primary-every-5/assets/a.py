@@ -10,5 +10,5 @@ secrets:
 import time
 
 print("Going to sleep")
-time.sleep(60)
+time.sleep(10)
 print("Yawn ... Woke up")
