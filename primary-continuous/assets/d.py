@@ -13,14 +13,21 @@ secrets:
 @bruin """
 
 import os
+import json
 import psycopg2
 
 run_id = os.environ.get('BRUIN_RUN_ID', 'unknown')
-conn_str = os.environ.get('NEON_CONN', '')
+neon = json.loads(os.environ.get('NEON_CONN', '{}'))
 
 print(f"Asset D: verifying execution order for run {run_id}")
 
-conn = psycopg2.connect(conn_str)
+conn = psycopg2.connect(
+    host=neon.get("host"),
+    port=neon.get("port", 5432),
+    dbname=neon.get("database"),
+    user=neon.get("username"),
+    password=neon.get("password"),
+)
 cur = conn.cursor()
 
 timestamps = {}
