@@ -6,7 +6,7 @@ connection: neon
 
 materialization:
     type: table
-    strategy: create+replace
+    strategy: append
 
 custom_checks:
   - name: silly check always passes
