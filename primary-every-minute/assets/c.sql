@@ -23,6 +23,6 @@ custom_checks:
 @bruin */
 
 SELECT
-    '{{ run_id }}' AS run_id,
+    '{{ end_datetime }}' AS run_id,
     'asset_c' AS asset_name,
     '{{ execution_timestamp }}' AS inserted_at

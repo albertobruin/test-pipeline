@@ -16,7 +16,7 @@ import os
 import json
 import psycopg2
 
-run_id = os.environ.get('BRUIN_RUN_ID', 'unknown')
+run_id = os.environ.get('BRUIN_END_DATETIME', 'unknown')
 neon = json.loads(os.environ.get('NEON_CONN', '{}'))
 
 print(f"Asset D: verifying execution order for run {run_id}")
