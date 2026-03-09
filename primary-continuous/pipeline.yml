@@ -8,6 +8,7 @@ metadata_push:
   
 default_connections:
   postgres: "neon"
+retries: 2
 
 variables:
   target_segment:

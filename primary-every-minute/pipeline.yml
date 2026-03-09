@@ -4,6 +4,7 @@ agent: false
 
 catchup: true
 catchup_mode: "active"
+retries: 2
 
 connection: ducky
 
