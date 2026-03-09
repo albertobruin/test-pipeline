@@ -8,7 +8,10 @@ secrets:
 @bruin """
 
 import time
+import random
 
 print("Going to sleep")
 time.sleep(10)
 print("Yawn ... Woke up")
+if random.random() < 0.5:
+  raise Exception("Random exception occurred")

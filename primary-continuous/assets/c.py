@@ -12,7 +12,10 @@ depends:
 @bruin """
 
 import time
+import random
 
 print("Going to sleep")
 time.sleep(10)
 print("Yawn ... Woke up")
+if random.random() < 1/3:
+    raise Exception("Random exception occurred")
