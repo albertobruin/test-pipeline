@@ -1,6 +1,6 @@
 name: google_analytics.events
 type: ingestr
-connection: my-bigquery
+connection: gcp-default
 
 parameters:
   source_connection: googleanalytics
