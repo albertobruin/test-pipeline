@@ -1,0 +1,5 @@
+id: googleanalytics
+schedule: "daily"
+
+default_connections:
+  google_cloud_platform: "my-bigquery"
