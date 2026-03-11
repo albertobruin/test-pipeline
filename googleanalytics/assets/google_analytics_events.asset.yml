@@ -1,0 +1,8 @@
+name: google_analytics.events
+type: ingestr
+connection: my-bigquery
+
+parameters:
+  source_connection: googleanalytics
+  source_table: 'custom:city,date:activeUsers,newUsers'
+  destination: bigquery
