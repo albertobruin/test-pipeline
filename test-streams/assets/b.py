@@ -15,6 +15,11 @@ minutes_in_day = now.hour * 60 + now.minute
 sixth_duration = 240  # 1440 minutes / 6 = 240 minutes per sixth
 current_sixth = minutes_in_day // sixth_duration
 
+
+print(f"Time: {now}")
+print(f"Current sixth: {current_sixth + 1}")
+print(f"Time: {now}")
+print("sleeping for 30 seconds to simulate work...")
 time.sleep(30)
 
 # Odd sixths are 1, 3, 5 (0-indexed)
