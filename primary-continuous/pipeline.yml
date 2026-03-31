@@ -10,6 +10,12 @@ default_connections:
   postgres: "neon"
 retries: 2
 
+notifications:
+  slack:
+    - channel: "#oxr-test-alerts"
+      success: true
+      failure: true
+
 variables:
   target_segment:
     type: string
