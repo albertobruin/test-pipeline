@@ -1,4 +1,4 @@
-id: secondary-every-minute
+id: secondary-every-minute-airflow
 schedule: "* * * * *"
 agent: false
 
