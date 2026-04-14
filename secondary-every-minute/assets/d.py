@@ -5,6 +5,7 @@ type: python
 
 depends:
   - public.asset_c
+  - public.asset_e
 
 secrets:
     - key: neon
