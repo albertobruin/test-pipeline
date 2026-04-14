@@ -16,6 +16,10 @@ custom_checks:
     value: 1
     query: select case when count(*) is not null then 1 else 0 end from public.asset_a
 
+notifications:
+  slack:
+    - channel: "#slack-test"
+
 @bruin */
 
 SELECT
