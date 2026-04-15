@@ -32,12 +32,6 @@ custom_checks:
         AND asset_name = 'asset_e'
     value: 1
 
-  - name: this check always fails
-    query: select 0
-    value: 1
-    notifications:
-      slack:
-        - channel: "#slack-test-checks"
 
 @bruin """
 
