@@ -16,7 +16,7 @@ notifications:
 @bruin */
 
 SELECT
-    CASE WHEN random() < 0.2 THEN 1/0 END,
+    CASE WHEN random() < 0.2 THEN (SELECT 1/0) END,
     '{{ end_datetime }}' AS run_id,
     'asset_e' AS asset_name,
     '{{ execution_timestamp }}' AS inserted_at
