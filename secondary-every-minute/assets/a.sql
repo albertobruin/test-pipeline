@@ -20,7 +20,7 @@ custom_checks:
     value: 1
     notifications:
       slack:
-        - channel: "#slack-test-checks"
+        - channel: "#slack-test"
 
 notifications:
   slack:
