@@ -12,6 +12,26 @@ notifications:
     - channel: "#slack-test"
       success: false
 
+    - channel: "#slack-test-checks"
+
+custom_checks:
+  - name: asset_e has a row for this run
+    description: Verifies that the Python script inserted exactly one row for the current run_id.
+    query: |
+      SELECT COUNT(*)
+      FROM public.asset_e
+      WHERE run_id = '{{ end_datetime }}'
+    value: 1
+
+  - name: asset_e row has correct asset name
+    description: Verifies that the inserted row records the correct asset_name value.
+    query: |
+      SELECT COUNT(*)
+      FROM public.asset_e
+      WHERE run_id = '{{ end_datetime }}'
+        AND asset_name = 'asset_e'
+    value: 1
+
 @bruin """
 
 import os
