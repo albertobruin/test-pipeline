@@ -14,8 +14,7 @@ secrets:
 notifications:
   slack:
     - channel: "#slack-test"
-    success: false
-    failure: false
+      success: false
 
 @bruin """
 
