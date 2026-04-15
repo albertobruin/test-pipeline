@@ -6,7 +6,7 @@ connection: neon
 
 materialization:
     type: table
-    strategy: replace
+    strategy: create+replace
 
 notifications:
   slack:
