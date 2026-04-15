@@ -22,6 +22,10 @@ custom_checks:
       FROM public.asset_e
       WHERE run_id = '{{ end_datetime }}'
     value: 1
+    notifications:
+      slack:
+        - channel: "#slack-test-checks"
+          success: false
 
   - name: asset_e row has correct asset name
     description: Verifies that the inserted row records the correct asset_name value.
@@ -30,6 +34,10 @@ custom_checks:
       FROM public.asset_e
       WHERE run_id = '{{ end_datetime }}'
         AND asset_name = 'asset_e'
+    value: 1
+
+  - name: this check always fails
+    query: select 0
     value: 1
 
 @bruin """
