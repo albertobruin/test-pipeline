@@ -6,7 +6,8 @@ type: python
 notifications:
   slack:
     - channel: "#slack-test"
-      success: false
+        success: false
+        failure: false
 
 secrets:
     - key: neon
