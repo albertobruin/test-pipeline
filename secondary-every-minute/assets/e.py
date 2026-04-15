@@ -19,8 +19,8 @@ import json
 import random
 import psycopg2
 
-if random.random() < 0.5:
-    raise Exception("Intentional random failure (50% chance)")
+if random.random() < 0.9:
+    raise Exception("Intentional random failure (90% chance)")
 
 run_id = os.environ.get('BRUIN_END_DATETIME', 'unknown')
 inserted_at = os.environ.get('BRUIN_EXECUTION_TIMESTAMP', 'unknown')
