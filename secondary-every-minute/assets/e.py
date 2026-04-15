@@ -6,7 +6,7 @@ type: python
 secrets:
     - key: neon
       inject_as: NEON_CONN
-      
+
 notifications:
   slack:
     - channel: "#slack-test"
@@ -19,8 +19,8 @@ import json
 import random
 import psycopg2
 
-if random.random() < 0.2:
-    raise Exception("Intentional random failure (20% chance)")
+if random.random() < 0.5:
+    raise Exception("Intentional random failure (50% chance)")
 
 run_id = os.environ.get('BRUIN_END_DATETIME', 'unknown')
 inserted_at = os.environ.get('BRUIN_EXECUTION_TIMESTAMP', 'unknown')
