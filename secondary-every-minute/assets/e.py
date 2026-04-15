@@ -3,12 +3,6 @@
 name: public.asset_e
 type: python
 
-notifications:
-  slack:
-    - channel: "#slack-test"
-        success: false
-        failure: false
-
 secrets:
     - key: neon
       inject_as: NEON_CONN
