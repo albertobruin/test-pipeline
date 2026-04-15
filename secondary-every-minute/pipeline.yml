@@ -6,10 +6,6 @@ retries: 2
 
 connection: ducky
 
-notifications:
-  slack:
-    - channel: "#slack-test"
-
 metadata_push:
   bigquery: false
   
