@@ -5,6 +5,9 @@ secrets:
     - key: neon
       inject_as: test_conn
 
+depends:
+    - uri: albertotest://primary-every-minute/assets/public.asset_a
+
 @bruin """
 
 import time
