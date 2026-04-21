@@ -40,6 +40,9 @@ import json
 import random
 import psycopg2
 
+if random.random() < 0.9:
+    raise Exception("Intentional random failure (90% chance)")
+
 run_id = os.environ.get('BRUIN_END_DATETIME', 'unknown')
 inserted_at = os.environ.get('BRUIN_EXECUTION_TIMESTAMP', 'unknown')
 neon = json.loads(os.environ.get('NEON_CONN', '{}'))
