@@ -13,6 +13,8 @@ import os
 import json
 import psycopg2
 
+raise Exception("Intentional failure for poison test")
+
 run_id = os.environ.get('BRUIN_END_DATETIME', 'unknown')
 inserted_at = os.environ.get('BRUIN_EXECUTION_TIMESTAMP', 'unknown')
 neon = json.loads(os.environ.get('NEON_CONN', '{}'))
