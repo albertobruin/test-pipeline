@@ -13,34 +13,39 @@ import os
 import json
 import psycopg2
 
-raise Exception("Intentional failure for poison test")
+import random
 
-run_id = os.environ.get('BRUIN_END_DATETIME', 'unknown')
-inserted_at = os.environ.get('BRUIN_EXECUTION_TIMESTAMP', 'unknown')
-neon = json.loads(os.environ.get('NEON_CONN', '{}'))
+if random.random() < 0.5:
+    raise Exception("exception on coin flipped")
 
-conn = psycopg2.connect(
-    host=neon.get("host"),
-    port=neon.get("port", 5432),
-    dbname=neon.get("database"),
-    user=neon.get("username"),
-    password=neon.get("password"),
-)
-cur = conn.cursor()
+print("asset_f executed successfully")
 
-cur.execute("""
-    CREATE TABLE IF NOT EXISTS public.asset_f (
-        run_id TEXT,
-        asset_name TEXT,
-        inserted_at TEXT
-    )
-""")
+# run_id = os.environ.get('BRUIN_END_DATETIME', 'unknown')
+# inserted_at = os.environ.get('BRUIN_EXECUTION_TIMESTAMP', 'unknown')
+# neon = json.loads(os.environ.get('NEON_CONN', '{}'))
 
-cur.execute(
-    "INSERT INTO public.asset_f (run_id, asset_name, inserted_at) VALUES (%s, %s, %s)",
-    (run_id, 'asset_f', inserted_at)
-)
+# conn = psycopg2.connect(
+#     host=neon.get("host"),
+#     port=neon.get("port", 5432),
+#     dbname=neon.get("database"),
+#     user=neon.get("username"),
+#     password=neon.get("password"),
+# )
+# cur = conn.cursor()
 
-conn.commit()
-cur.close()
-conn.close()
+# cur.execute("""
+#     CREATE TABLE IF NOT EXISTS public.asset_f (
+#         run_id TEXT,
+#         asset_name TEXT,
+#         inserted_at TEXT
+#     )
+# """)
+
+# cur.execute(
+#     "INSERT INTO public.asset_f (run_id, asset_name, inserted_at) VALUES (%s, %s, %s)",
+#     (run_id, 'asset_f', inserted_at)
+# )
+
+# conn.commit()
+# cur.close()
+# conn.close()
