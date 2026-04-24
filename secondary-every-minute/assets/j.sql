@@ -1,6 +1,6 @@
 /* @bruin
 
-name: public.dotted_test.asset_j
+name: public.asset_j
 type: pg.sql
 connection: neon
 
