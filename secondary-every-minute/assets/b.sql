@@ -8,6 +8,10 @@ materialization:
     type: table
     strategy: append
 
+notifications:
+  slack:
+    - channel: "#slack-test-checks"
+
 custom_checks:
   - name: silly check always passes
     value: 1
