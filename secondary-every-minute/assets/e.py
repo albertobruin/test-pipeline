@@ -23,7 +23,7 @@ custom_checks:
     notifications:
       slack:
         - channel: "#slack-test"
-      success: false
+          success: false
 
   - name: asset_e row has correct asset name
     description: Verifies that the inserted row records the correct asset_name value.
@@ -36,7 +36,7 @@ custom_checks:
     notifications:
       slack:
         - channel: "#slack-test"
-      success: false
+          success: false
 
 
 @bruin """

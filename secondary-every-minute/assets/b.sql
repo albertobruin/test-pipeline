@@ -20,14 +20,14 @@ custom_checks:
     notifications:
       slack:
         - channel: "#slack-test"
-      success: false
+          success: false
   - name: table row count is not null
     value: 1
     query: select case when count(*) is not null then 1 else 0 end from public.asset_b
     notifications:
       slack:
         - channel: "#slack-test"
-      success: false
+          success: false
 
 @bruin */
 
