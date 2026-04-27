@@ -10,7 +10,7 @@ materialization:
 
 notifications:
   slack:
-    - channel: "#slack-test-checks"
+    - channel: "#slack-test"
 
 custom_checks:
   - name: coin flip check fails 50 pct

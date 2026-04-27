@@ -12,7 +12,7 @@ notifications:
     - channel: "#slack-test"
       success: false
 
-    - channel: "#slack-test-checks"
+    - channel: "#slack-test"
 
 custom_checks:
   - name: asset_e has a row for this run
