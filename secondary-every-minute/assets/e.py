@@ -10,6 +10,7 @@ secrets:
 notifications:
   slack:
     - channel: "#slack-test"
+      success: false
 
 custom_checks:
   - name: asset_e has a row for this run
@@ -22,6 +23,7 @@ custom_checks:
     notifications:
       slack:
         - channel: "#slack-test"
+      success: false
 
   - name: asset_e row has correct asset name
     description: Verifies that the inserted row records the correct asset_name value.
@@ -34,6 +36,7 @@ custom_checks:
     notifications:
       slack:
         - channel: "#slack-test"
+      success: false
 
 
 @bruin """
