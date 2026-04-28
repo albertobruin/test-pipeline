@@ -1,6 +1,6 @@
 """ @bruin
 
-name: asset_d
+name: asset_dd
 type: python
 
 depends:
