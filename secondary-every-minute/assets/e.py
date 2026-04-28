@@ -7,11 +7,6 @@ secrets:
     - key: neon
       inject_as: NEON_CONN
 
-notifications:
-  slack:
-    - channel: "#slack-test"
-      success: false
-
 custom_checks:
   - name: asset_e has a row for this run
     description: Verifies that the Python script inserted exactly one row for the current run_id.
@@ -20,10 +15,6 @@ custom_checks:
       FROM public.asset_e
       WHERE run_id = '{{ end_datetime }}'
     value: 1
-    notifications:
-      slack:
-        - channel: "#slack-test"
-          success: false
 
   - name: asset_e row has correct asset name
     description: Verifies that the inserted row records the correct asset_name value.
@@ -33,10 +24,6 @@ custom_checks:
       WHERE run_id = '{{ end_datetime }}'
         AND asset_name = 'asset_e'
     value: 1
-    notifications:
-      slack:
-        - channel: "#slack-test"
-          success: false
 
 
 @bruin """

@@ -11,11 +11,6 @@ secrets:
     - key: neon
       inject_as: NEON_CONN
 
-notifications:
-  slack:
-    - channel: "#slack-test"
-      success: false
-
 @bruin """
 
 import os
