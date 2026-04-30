@@ -2,7 +2,7 @@ id: primary-every-minute
 schedule: "* * * * *"
 agent: false
 
-catchup: true
+catchup: false
 catchup_mode: "active"
 retries: 2
 

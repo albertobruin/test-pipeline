@@ -1,0 +1,4 @@
+id: retry-test
+schedule: "*/5 * * * *"
+
+retries: 2
