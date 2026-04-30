@@ -6,7 +6,7 @@ connection: neon
 
 materialization:
     type: table
-    strategy: append
+    strategy: create+replace
 
 
 @bruin */
