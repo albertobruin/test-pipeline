@@ -12,6 +12,10 @@ custom_checks:
   - name: coin flip check fails 50 pct
     value: 1
     query: select 0
+    notifications:
+      slack:
+        - channel: "#slack-test"
+          success: false
   - name: table row count is not null
     value: 1
     query: select case when count(*) is not null then 1 else 0 end from public.asset_b
