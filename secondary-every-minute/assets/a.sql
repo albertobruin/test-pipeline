@@ -8,6 +8,10 @@ materialization:
     type: table
     strategy: append
 
+notifications:
+    slack:
+        - channel: "#slack-test"
+          success: false
 
 @bruin */
 
