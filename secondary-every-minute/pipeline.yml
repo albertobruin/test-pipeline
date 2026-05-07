@@ -4,11 +4,6 @@ agent: false
 
 retries: 2
 
-notifications:
-  slack:
-    - channel: "#slack-test"
-      success: false
-
 connection: ducky
 
 metadata_push:
