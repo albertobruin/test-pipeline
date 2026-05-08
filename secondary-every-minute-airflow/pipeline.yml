@@ -9,7 +9,7 @@ connection: ducky
 notifications:
   slack:
     - channel: "#slack-test"
-      success: true
+      success: false
 
 metadata_push:
   bigquery: false
