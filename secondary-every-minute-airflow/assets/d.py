@@ -15,8 +15,8 @@ notifications:
     - channel: "#slack-test"
 
 custom_checks:
-  - name: this check always fails
-    query: select 0
+  - name: check always passes
+    query: select 1
     value: 1
     notifications:
       slack:
@@ -26,11 +26,7 @@ custom_checks:
 
 import os
 import json
-import random
 import psycopg2
-
-if random.random() < 0.5:
-    raise Exception("Intentional random failure (50% chance)")
 
 run_id = os.environ.get('BRUIN_END_DATETIME', 'unknown')
 neon = json.loads(os.environ.get('NEON_CONN', '{}'))
