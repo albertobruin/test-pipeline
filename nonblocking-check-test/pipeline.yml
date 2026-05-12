@@ -1,5 +1,0 @@
-id: nonblocking-check-test
-schedule: "* * * * *"
-
-default_connections:
-  postgres: "neon"
