@@ -8,6 +8,13 @@ materialization:
     type: table
     strategy: append
 
+custom_checks:
+  - name: non blocking check that always fails
+    description: This check intentionally fails to test non-blocking behavior
+    value: 0
+    query: select 1
+    blocking: false
+
 @bruin */
 
 SELECT
