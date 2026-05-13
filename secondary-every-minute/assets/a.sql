@@ -9,10 +9,10 @@ materialization:
     strategy: append
 
 custom_checks:
-  - name: blocking check that always fails
+  - name: non blocking check that always fails
     value: 0
     query: select 1
-    blocking: true
+    blocking: false
 
 @bruin */
 
