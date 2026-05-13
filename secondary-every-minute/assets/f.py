@@ -13,11 +13,6 @@ import os
 import json
 import psycopg2
 
-import random
-
-if random.random() < 0.5:
-    raise Exception("exception on coin flipped")
-
 print("asset_f executed successfully")
 
 # run_id = os.environ.get('BRUIN_END_DATETIME', 'unknown')
