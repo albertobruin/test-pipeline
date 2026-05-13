@@ -11,12 +11,6 @@ secrets:
     - key: neon
       inject_as: NEON_CONN
 
-custom_checks:
-  - name: non blocking check that always fails
-    value: 0
-    query: select 1
-    blocking: false
-
 @bruin """
 
 import os
