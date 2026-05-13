@@ -10,17 +10,10 @@ secrets:
     - key: neon
       inject_as: NEON_CONN
 
-notifications:
-  slack:
-    - channel: "#slack-test"
-
 custom_checks:
   - name: check always passes
     query: select 1
     value: 1
-    notifications:
-      slack:
-        - channel: "#slack-test"
 
 @bruin """
 
