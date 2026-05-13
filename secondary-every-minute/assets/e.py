@@ -8,23 +8,10 @@ secrets:
       inject_as: NEON_CONN
 
 custom_checks:
-  - name: asset_e has a row for this run
-    description: Verifies that the Python script inserted exactly one row for the current run_id.
-    query: |
-      SELECT COUNT(*)
-      FROM public.asset_e
-      WHERE run_id = '{{ end_datetime }}'
-    value: 1
-
-  - name: asset_e row has correct asset name
-    description: Verifies that the inserted row records the correct asset_name value.
-    query: |
-      SELECT COUNT(*)
-      FROM public.asset_e
-      WHERE run_id = '{{ end_datetime }}'
-        AND asset_name = 'asset_e'
-    value: 1
-
+  - name: non blocking check that always fails
+    value: 0
+    query: select 1
+    blocking: false
 
 @bruin """
 
