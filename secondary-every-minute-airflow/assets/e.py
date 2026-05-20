@@ -10,4 +10,4 @@ custom_checks:
 
 @bruin """
 
-raise Exception("Asset E: intentional failure")
+print("Asset E: completed successfully")
