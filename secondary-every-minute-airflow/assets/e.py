@@ -5,4 +5,4 @@ type: python
 
 @bruin """
 
-raise Exception("Asset E: intentional failure for notification testing")
+print("Asset E: completed successfully")
