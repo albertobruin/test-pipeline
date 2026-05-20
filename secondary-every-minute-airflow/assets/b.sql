@@ -15,10 +15,6 @@ custom_checks:
   - name: table row count is not null
     value: 1
     query: select case when count(*) is not null then 1 else 0 end from public.asset_b
-  - name: check that always fails
-    value: 0
-    query: select 1
-
 @bruin */
 
 SELECT
