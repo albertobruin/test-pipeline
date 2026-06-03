@@ -12,12 +12,6 @@ materialization:
     type: table
     strategy: append
 
-custom_checks:
-  - name: always-failing blocking check (tier 2)
-    value: 1
-    query: select 0
-    blocking: true
-
 @bruin */
 
 SELECT

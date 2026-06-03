@@ -12,6 +12,12 @@ materialization:
     type: table
     strategy: append
 
+custom_checks:
+  - name: always-failing blocking check (tier 3 tail)
+    value: 1
+    query: select 0
+    blocking: true
+
 @bruin */
 
 SELECT

@@ -10,7 +10,4 @@ depends:
 
 @bruin """
 
-import os
-
-run_id = os.environ.get("BRUIN_END_DATETIME", "unknown")
-print(f"asset t60 ok for run {run_id}")
+raise RuntimeError("asset t60 fails on purpose for rerun/mark-as testing")

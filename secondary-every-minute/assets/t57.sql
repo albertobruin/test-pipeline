@@ -15,7 +15,4 @@ materialization:
 
 @bruin */
 
-SELECT
-    '{{ end_datetime }}' AS run_id,
-    't57' AS asset_name,
-    '{{ execution_timestamp }}' AS inserted_at
+SELECT * FROM public.this_table_does_not_exist_intentionally

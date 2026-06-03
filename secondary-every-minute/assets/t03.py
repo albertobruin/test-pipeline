@@ -5,4 +5,7 @@ type: python
 
 @bruin """
 
-raise RuntimeError("asset t03 fails on purpose for rerun/mark-as testing")
+import os
+
+run_id = os.environ.get("BRUIN_END_DATETIME", "unknown")
+print(f"asset t03 ok for run {run_id}")

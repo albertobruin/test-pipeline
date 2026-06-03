@@ -13,7 +13,7 @@ materialization:
     strategy: append
 
 custom_checks:
-  - name: always-failing blocking check (near sinks)
+  - name: always-failing blocking check (tier 5)
     value: 1
     query: select 0
     blocking: true
