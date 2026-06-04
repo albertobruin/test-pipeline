@@ -1,0 +1,15 @@
+id: catchup-daily-test
+schedule: "0 0 * * *"
+agent: false
+
+catchup: true
+catchup_mode: "all"
+retries: 2
+
+connection: ducky
+
+metadata_push:
+  bigquery: false
+
+default_connections:
+  postgres: "neon"
