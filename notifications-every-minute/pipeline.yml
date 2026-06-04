@@ -10,6 +10,7 @@ notifications:
   slack:
     - channel: "#slack-test"
       success: true
+      success: true
 
 connection: ducky
 
