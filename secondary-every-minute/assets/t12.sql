@@ -11,6 +11,11 @@ materialization:
     type: table
     strategy: append
 
+custom_checks:
+  - name: always-failing non-blocking check (tier 2, downstream still runs)
+    value: 1
+    query: select 0
+
 @bruin */
 
 SELECT
