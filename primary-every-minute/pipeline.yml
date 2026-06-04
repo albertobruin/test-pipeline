@@ -6,6 +6,10 @@ catchup: false
 catchup_mode: "active"
 retries: 2
 
+notifications:
+  slack:
+    - channel: "#slack-test"
+
 connection: ducky
 
 metadata_push:
