@@ -8,10 +8,6 @@ depends:
   - public.t37
   - public.t42
 
-materialization:
-    type: table
-    strategy: append
-
 custom_checks:
   - name: always-failing blocking check (tier 5)
     value: 1
@@ -20,7 +16,4 @@ custom_checks:
 
 @bruin */
 
-SELECT
-    '{{ end_datetime }}' AS run_id,
-    't52' AS asset_name,
-    '{{ execution_timestamp }}' AS inserted_at
+SELECT 1

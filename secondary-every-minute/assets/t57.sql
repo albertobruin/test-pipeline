@@ -9,10 +9,6 @@ depends:
   - public.t50
   - public.t53
 
-materialization:
-    type: table
-    strategy: append
-
 @bruin */
 
 SELECT * FROM public.this_table_does_not_exist_intentionally
