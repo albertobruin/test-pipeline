@@ -4,8 +4,8 @@ name: public.t28
 type: python
 
 depends:
-  - public.t08
-  - public.t11
+  - public.t18
+  - public.t22
 
 @bruin """
 

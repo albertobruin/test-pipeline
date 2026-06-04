@@ -1,12 +1,8 @@
 /* @bruin
 
-name: public.t37
+name: public.t03
 type: pg.sql
 connection: neon
-
-depends:
-  - public.t22
-  - public.t26
 
 @bruin */
 

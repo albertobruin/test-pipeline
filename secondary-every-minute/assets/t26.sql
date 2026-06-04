@@ -5,8 +5,8 @@ type: pg.sql
 connection: neon
 
 depends:
-  - public.t06
-  - public.t09
+  - public.t16
+  - public.t20
 
 @bruin */
 
