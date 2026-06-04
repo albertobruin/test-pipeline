@@ -9,7 +9,7 @@ retries: 2
 notifications:
   slack:
     - channel: "#slack-test"
-      success: false
+      success: true
 
 connection: ducky
 
