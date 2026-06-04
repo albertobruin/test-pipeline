@@ -19,4 +19,7 @@ custom_checks:
 
 @bruin */
 
-SELECT 1/0
+SELECT
+    '{{ end_datetime }}' AS run_id,
+    'asset_a' AS asset_name,
+    '{{ execution_timestamp }}' AS inserted_at
