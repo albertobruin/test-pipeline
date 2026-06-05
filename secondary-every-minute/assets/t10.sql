@@ -9,9 +9,9 @@ depends:
   - public.t05
 
 custom_checks:
-  - name: flaky blocking check (retry-then-success test)
+  - name: always-failing blocking check (mid-retry mark test)
     value: 1
-    query: select case when random() > 0.4 then 1 else 0 end
+    query: select 0
     blocking: true
 
 @bruin */
