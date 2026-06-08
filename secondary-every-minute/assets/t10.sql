@@ -8,12 +8,6 @@ depends:
   - public.t01
   - public.t05
 
-custom_checks:
-  - name: always-failing blocking check (mid-retry mark test)
-    value: 1
-    query: select 0
-    blocking: true
-
 @bruin */
 
-SELECT 1
+SELECT * FROM public.this_table_does_not_exist_intentionally
