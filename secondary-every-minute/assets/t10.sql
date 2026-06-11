@@ -10,4 +10,4 @@ depends:
 
 @bruin */
 
-SELECT * FROM public.this_table_does_not_exist_intentionally
+SELECT 1
