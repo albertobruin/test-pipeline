@@ -1,0 +1,9 @@
+id: nonblocking-check-test
+schedule: "* * * * *"
+agent: false
+
+catchup: false
+retries: 2
+
+default_connections:
+  postgres: "neon"
