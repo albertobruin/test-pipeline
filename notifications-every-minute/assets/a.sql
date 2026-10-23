@@ -1,6 +1,6 @@
 /* @bruin
 
-name: public.asset_a
+name: public.asset_a_not
 uri: albertotest://primary-every-minute/assets/public.asset_a
 type: pg.sql
 connection: neon/some/client
