@@ -1,6 +1,6 @@
 /* @bruin
 
-name: public.asset_e
+name: public.asset_eeeeee
 type: pg.sql
 connection: neon
 
