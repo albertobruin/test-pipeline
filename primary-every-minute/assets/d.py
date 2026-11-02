@@ -18,8 +18,6 @@ import psycopg2
 import time
 import random
 
-
-time.sleep(300)
 if random.random() < 0.5:
     raise Exception("Heads! You lose!")
 else:
