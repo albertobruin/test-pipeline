@@ -15,9 +15,15 @@ secrets:
 import os
 import json
 import psycopg2
+import time
+import random
 
 
-exit(10)
+time.sleep(300)
+if random.random() < 0.5:
+    raise Exception("Heads! You lose!")
+else:
+    print("Tails! You win!")
 
 run_id = os.environ.get('BRUIN_END_DATETIME', 'unknown')
 neon = json.loads(os.environ.get('NEON_CONN', '{}'))
