@@ -3,6 +3,8 @@
 name: asset_d
 type: python
 
+retries: 0
+
 depends:
   - public.asset_c
 
