@@ -16,6 +16,9 @@ import os
 import json
 import psycopg2
 
+
+exit(10)
+
 run_id = os.environ.get('BRUIN_END_DATETIME', 'unknown')
 neon = json.loads(os.environ.get('NEON_CONN', '{}'))
 
@@ -49,5 +52,7 @@ assert timestamps['asset_a'] <= timestamps['asset_c'], \
     f"Order violation: asset_a ({timestamps['asset_a']}) ran after asset_c ({timestamps['asset_c']})"
 assert timestamps['asset_b'] <= timestamps['asset_c'], \
     f"Order violation: asset_b ({timestamps['asset_b']}) ran after asset_c ({timestamps['asset_c']})"
+
+
 
 print("Asset D: execution order verified successfully")
